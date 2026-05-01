@@ -141,11 +141,32 @@ em { font-family: var(--font-serif); font-style: italic; color: var(--primary); 
   transition: var(--transition);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 .bento-card:hover { 
   border-color: var(--primary); 
-  transform: var(--hover-lift); 
-  box-shadow: 0 20px 40px -20px rgba(15, 23, 42, 0.1);
+  transform: translateY(-8px); 
+  box-shadow: 0 40px 60px -20px rgba(15, 23, 42, 0.1);
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--accent-green-soft);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 32px;
+  transition: var(--transition);
+}
+
+.bento-card:hover .service-icon {
+  background: var(--primary);
+  color: #FFFFFF;
+  transform: scale(1.1) rotate(5deg);
 }
 
 .testimonios { background: var(--secondary); color: var(--surface); border-bottom: none; }
@@ -180,6 +201,21 @@ em { font-family: var(--font-serif); font-style: italic; color: var(--primary); 
 .footer-hours ul li, .footer-contact p { color: #CBD5E1; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding: 32px 0; font-size: 0.85rem; color: #94A3B8; text-align: center; }
 .footer .hero-meta { background: rgba(16, 185, 129, 0.1); color: var(--primary); border: 1px solid rgba(16, 185, 129, 0.2); font-weight: 700; }
+
+/* ===== DECORATIVE WOW ELEMENTS ===== */
+.servicios {
+  background: linear-gradient(to bottom, #FFFFFF, var(--canvas));
+  position: relative;
+}
+.servicios::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.3;
+  pointer-events: none;
+}
 
 /* ===== NAVBAR ===== */
 .navbar { 
