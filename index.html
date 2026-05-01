@@ -4,13 +4,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dra. Paola Marín | Odontóloga en Pereira – 20 Años de Experiencia</title>
+  <title>Dra. Paola Marín | Odontóloga en Pereira – 4 Años de Experiencia</title>
   <meta name="description"
-    content="Consultorio odontológico de la Dra. Paola Marín en Hacienda Cuba, Pereira. Más de 20 años de experiencia. Agenda tu valoración por WhatsApp hoy." />
+    content="Consultorio odontológico de la Dra. Paola Marín en Hacienda Cuba, Pereira. 4 años de experiencia en estética dental y rehabilitación. Agenda tu valoración hoy." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://odontologapaolamarin.com/" />
+  <meta property="og:title" content="Dra. Paola Marín | Odontóloga en Pereira – 4 Años de Excelencia" />
+  <meta property="og:description" content="Especialista en estética dental y rehabilitación oral en Pereira. Precisión clínica con calidez humana." />
+  <meta property="og:image" content="assets/dental_hero.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Dra. Paola Marín | Odontóloga en Pereira" />
+  <meta property="twitter:description" content="Especialista en estética dental y rehabilitación oral en Pereira." />
+  <meta property="twitter:image" content="assets/dental_hero.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dra. Paola Marín",
+      "image": "https://odontologapaolamarin.com/assets/dr_paola_real.png",
+      "@id": "https://odontologapaolamarin.com/",
+      "url": "https://odontologapaolamarin.com/",
+      "telephone": "+573202614733",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl. 75 #44-60 Local 4, Hacienda Cuba",
+        "addressLocality": "Pereira",
+        "addressRegion": "Risaralda",
+        "postalCode": "660001",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 4.792083581700411,
+        "longitude": -75.72758398291768
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:30",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/odontologapaolamarin/"
+      ]
+    }
+  </script>
 </head>
 
 <body>
@@ -26,6 +81,11 @@
         <li><a href="#nosotros">Trayectoria</a></li>
         <li><a href="#testimonios">Opiniones</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li class="nav-social">
+          <a href="https://www.instagram.com/odontologapaolamarin/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+        </li>
         <li><a href="https://wa.me/573202614733" class="btn-primary"
             target="_blank" rel="noopener">Agendar Cita</a></li>
       </ul>
@@ -38,15 +98,35 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="container hero-content">
-      <div class="hero-text-layout" data-reveal>
-        <div class="hero-main">
-          <span class="hero-meta">Odontología de Autor · Pereira</span>
-          <h1>Precisión clínica con <em>calidez humana</em>.</h1>
-          <p class="lead">Más de 20 años transformando la salud oral en Pereira a través de un enfoque personalizado y honesto.</p>
-          <div class="hero-actions">
-            <a href="https://wa.me/573202614733" class="btn-primary">
-              Agendar Valoración
-            </a>
+      <div class="hero-main" data-reveal>
+        <span class="hero-meta">Odontología de Autor · Pereira</span>
+        <h1>Tu sonrisa merece <em>confianza</em> y precisión.</h1>
+        <p class="lead">Combinamos 4 años de experiencia clínica con tecnología de vanguardia para transformar tu salud oral en <em>Pereira</em>.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/573202614733" class="btn-primary">
+            Agendar Valoración
+          </a>
+          <a href="#servicios" class="btn-outline">
+            Ver Servicios
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal>
+        <div class="floating-card top">
+          <div class="icon-circle" style="background: var(--accent-green-soft); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">★</div>
+          <div>
+            <strong style="display: block; font-size: 0.9rem;">Calidad Garantizada</strong>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">Resultados duraderos</span>
+          </div>
+        </div>
+        <div class="hero-img-container">
+          <img src="assets/dental_hero.png" alt="Odontología de Excelencia">
+        </div>
+        <div class="floating-card bottom">
+          <div class="icon-circle" style="background: #FFFBEB; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #F59E0B;">♥</div>
+          <div>
+            <strong style="display: block; font-size: 0.9rem;">Atención Humana</strong>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">Sin prisas, con calma</span>
           </div>
         </div>
       </div>
@@ -59,7 +139,7 @@
       <div class="bento-grid">
         <div class="bento-card" style="grid-column: span 4;" data-reveal>
           <span class="hero-meta">Experiencia</span>
-          <h3>+20 Años</h3>
+          <h3>+4 Años</h3>
           <p>Dedicados a la excelencia clínica y el bienestar del paciente.</p>
         </div>
         <div class="bento-card" style="grid-column: span 4;" data-reveal>
@@ -102,34 +182,39 @@
   <section class="servicios" id="servicios">
     <div class="container">
       <div class="section-header">
-        <span class="hero-meta">Especialidades</span>
-        <h2>Cuidado Integral de la <em>Salud Oral</em></h2>
+        <span class="hero-meta">Nuestros Servicios</span>
+        <h2>Excelencia en <em>Salud Oral</em></h2>
       </div>
       <div class="bento-grid">
-        <div class="bento-card" style="grid-column: span 8;" data-reveal>
-          <span class="hero-meta">Estética & General</span>
-          <h3>Rehabilitación y Diseño</h3>
-          <p>Desde limpiezas profundas hasta restauraciones complejas con resinas de alta gama.</p>
-          <ul class="clean-list">
-            <li>Blanqueamiento LED</li>
-            <li>Carillas Cerámicas</li>
-            <li>Profilaxis Ultrasónica</li>
-          </ul>
+        <div class="bento-card" style="grid-column: span 6;" data-reveal>
+          <div class="service-icon" style="font-size: 2rem; margin-bottom: 20px;">✨</div>
+          <span class="hero-meta">Estética</span>
+          <h3>Odontología Estética</h3>
+          <p>Diseño de sonrisa personalizado (Carillas) y blanqueamiento avanzado para una estética impecable.</p>
+        </div>
+        <div class="bento-card" style="grid-column: span 6;" data-reveal>
+          <div class="service-icon" style="font-size: 2rem; margin-bottom: 20px;">🦷</div>
+          <span class="hero-meta">Funcional</span>
+          <h3>Rehabilitación Oral</h3>
+          <p>Restauramos la funcionalidad y estética mediante prótesis fijas y tratamientos de alta complejidad.</p>
         </div>
         <div class="bento-card" style="grid-column: span 4;" data-reveal>
-          <span class="hero-meta">Especializada</span>
-          <h3>Endodoncia</h3>
-          <p>Tratamientos de conducto con mínima invasión.</p>
+          <div class="service-icon" style="font-size: 2rem; margin-bottom: 20px;">📏</div>
+          <span class="hero-meta">Ortodoncia</span>
+          <h3>Ortodoncia</h3>
+          <p>Alineación dental especializada con tecnología de vanguardia para una mordida perfecta.</p>
         </div>
         <div class="bento-card" style="grid-column: span 4;" data-reveal>
-          <span class="hero-meta">Quirúrgica</span>
-          <h3>Implantes</h3>
-          <p>Soluciones permanentes para recuperar la funcionalidad.</p>
-        </div>
-        <div class="bento-card" style="grid-column: span 8;" data-reveal>
+          <div class="service-icon" style="font-size: 2rem; margin-bottom: 20px;">🛡️</div>
           <span class="hero-meta">Preventiva</span>
-          <h3>Periodoncia</h3>
-          <p>Cuidado avanzado de las encías y tejidos de soporte para una salud duradera.</p>
+          <h3>Odontología Integral</h3>
+          <p>Valoraciones, limpiezas profundas y prevención para mantener tu sonrisa sana en cada etapa.</p>
+        </div>
+        <div class="bento-card" style="grid-column: span 4;" data-reveal>
+          <div class="service-icon" style="font-size: 2rem; margin-bottom: 20px;">📞</div>
+          <span class="hero-meta">Urgencias</span>
+          <h3>Atención Prioritaria</h3>
+          <p>Cuidado inmediato para casos de dolor o trauma dental. Estamos cuando más nos necesitas.</p>
         </div>
       </div>
     </div>
@@ -145,7 +230,7 @@
         <div class="bento-card" style="grid-column: span 7;" data-reveal>
           <span class="hero-meta">Fundadora</span>
           <h2>Dra. Paola <em>Marín</em></h2>
-          <p class="lead">Con más de dos décadas de práctica clínica en Pereira, mi compromiso ha sido siempre la honestidad médica y la precisión técnica.</p>
+          <p class="lead">Con 4 años de práctica clínica de excelencia en Pereira, mi compromiso ha sido siempre la honestidad médica y la precisión técnica.</p>
           <p>Entiendo la odontología no solo como una ciencia, sino como un servicio humano donde la confianza es el pilar fundamental. En mi consultorio, cada paciente recibe el tiempo y la atención que la salud merece, sin prisas y con total transparencia en los diagnósticos.</p>
           <div class="hero-actions" style="margin-top: 32px;">
             <a href="https://wa.me/573202614733" class="btn-primary">Conocer más</a>
@@ -158,32 +243,51 @@
   <!-- OPINIONES -->
   <section class="testimonios" id="testimonios">
     <div class="container">
-      <div class="section-header">
-        <span class="hero-meta">Opiniones</span>
-        <h2>La Voz de nuestros <em>Pacientes</em></h2>
+      <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px;">
+        <div>
+          <span class="hero-meta">Google Reviews</span>
+          <h2>Opiniones de nuestros <em>Pacientes</em></h2>
+        </div>
+        <div class="google-badge" style="background: rgba(255,255,255,0.1); padding: 16px 24px; border-radius: var(--radius-md); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_"G"_logo.svg' alt="Google" width="24">
+            <div>
+              <strong style="font-size: 1.25rem; display: block;">4.7 / 5</strong>
+              <span style="font-size: 0.8rem; color: #94A3B8;">28 opiniones en Google</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="bento-grid">
         <div class="bento-card" style="grid-column: span 4;" data-reveal>
-          <p class="testimonio-text">"La confianza que transmite la doctora es inigualable. Llevo años asistiendo y la precisión en sus diagnósticos es excepcional."</p>
+          <div style="color: #F59E0B; margin-bottom: 16px;">★★★★★</div>
+          <p class="testimonio-text">"Excelente servicio. Todo es muy profesional, me siento en confianza al poner mi salud oral en tan buenas manos. ¡Llevo más de dos años asistiendo!"</p>
           <div class="testimonio-footer">
             <strong>Juan Vásquez</strong>
-            <span class="hero-meta">Paciente de Rehabilitación</span>
+            <span class="hero-meta" style="color: #94A3B8;">Paciente de Rehabilitación</span>
           </div>
         </div>
         <div class="bento-card" style="grid-column: span 4;" data-reveal>
-          <p class="testimonio-text">"Excelente atención y profesionalismo. Todo el proceso fue indoloro y los resultados estéticos superaron mis expectativas."</p>
-          <div class="testimonio-footer">
-            <strong>Jose Guzman</strong>
-            <span class="hero-meta">Paciente de Estética</span>
-          </div>
-        </div>
-        <div class="bento-card" style="grid-column: span 4;" data-reveal>
-          <p class="testimonio-text">"Un espacio moderno y acogedor. La Dra. Paola explica todo con detalle, lo cual da mucha tranquilidad."</p>
+          <div style="color: #F59E0B; margin-bottom: 16px;">★★★★★</div>
+          <p class="testimonio-text">"Mi experiencia como paciente me encanta porque son profesionales, amables y con habilidades en comunicación efectiva en diagnóstico y servicio."</p>
           <div class="testimonio-footer">
             <strong>Cristian Marín</strong>
-            <span class="hero-meta">Paciente verificado</span>
+            <span class="hero-meta" style="color: #94A3B8;">Paciente Verificado</span>
           </div>
         </div>
+        <div class="bento-card" style="grid-column: span 4;" data-reveal>
+          <div style="color: #F59E0B; margin-bottom: 16px;">★★★★★</div>
+          <p class="testimonio-text">"Un excelente trabajo y un muy buen lugar. La Dra. Paola explica todo con detalle, lo cual da mucha tranquilidad en cada proceso."</p>
+          <div class="testimonio-footer">
+            <strong>Cristina Aricapa</strong>
+            <span class="hero-meta" style="color: #94A3B8;">Paciente de Estética</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJT4M3Y8C_G44R_A-e72R0kHw" class="btn-outline" style="color: white; border-color: rgba(255,255,255,0.2);" target="_blank" rel="noopener">
+          Ver todas las opiniones en Google
+        </a>
       </div>
     </div>
   </section>
@@ -237,26 +341,37 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
+    <div class="container footer-inner" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 48px;">
       <div class="footer-brand">
         <a href="#hero" class="logo">
           <span>Dra. Paola <strong>Marín</strong></span>
         </a>
-        <p style="margin-top: 16px;">Excelencia clínica en el corazón de Pereira.</p>
+        <p style="margin-top: 16px; color: #94A3B8;">Especialista en Odontología Estética y Rehabilitación Oral en Pereira.</p>
+        <div class="footer-social" style="margin-top: 24px;">
+          <a href="https://www.instagram.com/odontologapaolamarin/" target="_blank" rel="noopener" style="color: #94A3B8; transition: var(--transition);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+        </div>
       </div>
-      <div class="footer-links">
-        <span class="hero-meta">Navegación</span>
-        <ul class="clean-list" style="margin-top: 16px;">
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Trayectoria</a></li>
-          <li><a href="#testimonios">Opiniones</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+      <div class="footer-hours">
+        <span class="hero-meta">Horarios</span>
+        <ul class="clean-list" style="margin-top: 16px; color: #94A3B8; line-height: 2;">
+          <li>Lun – Vie: 8:30 a.m. – 6:00 p.m.</li>
+          <li>Sábados: 8:00 a.m. – 2:00 p.m.</li>
+          <li>Domingos: Cerrado</li>
         </ul>
+      </div>
+      <div class="footer-contact">
+        <span class="hero-meta">Contacto</span>
+        <div style="margin-top: 16px; color: #94A3B8;">
+          <p>Hacienda Cuba, Cl. 75 #44-60<br>Local 4, Pereira, Risaralda</p>
+          <p style="margin-top: 12px; color: white;"><strong>WhatsApp:</strong> 320 2614733</p>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>© 2025 Dra. Paola Marín · Odontología de Autor</p>
+        <p>© 2024 Dra. Paola Marín · Odontología de Autor</p>
       </div>
     </div>
   </footer>
